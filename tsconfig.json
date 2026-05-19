@@ -1,0 +1,47 @@
+/* To learn more about Typescript configuration file: https://www.typescriptlang.org/docs/handbook/tsconfig-json.html. */
+/* To learn more about Angular compiler options: https://angular.dev/reference/configs/angular-compiler-options. */
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "paths": {
+      "@monorepo/angular": [
+        "./dist/monorepo/angular"
+      ],
+      "angular-lib": [
+        "./dist/angular-lib"
+      ]
+    },
+    "strict": true,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "skipLibCheck": true,
+    "isolatedModules": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "ES2022",
+    "module": "preserve"
+  },
+  "angularCompilerOptions": {
+    "enableI18nLegacyMessageIdFormat": false,
+    "strictInjectionParameters": true,
+    "strictInputAccessModifiers": true,
+    "strictTemplates": true
+  },
+  "files": [],
+  "references": [
+    {
+      "path": "./projects/monorepo/angular/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/monorepo/angular/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/angular-lib/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/angular-lib/tsconfig.spec.json"
+    }
+  ]
+}
